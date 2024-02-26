@@ -69,7 +69,7 @@ include("../../header.php");
                     name=""
                     id=""
                     class="btn btn-info"
-                    href="#"
+                    href="editar.php?txtid= <?php echo $registro ['idservicio']; ?>"
                     role="button"
                     >Editar</a
                  >
@@ -81,14 +81,7 @@ include("../../header.php");
                     role="button"
                     >Eliminar</a
                   >
-                  
-
-
-
                 </td>
-
-
-
             </tr>
             <?php } ?>
             </tr>
