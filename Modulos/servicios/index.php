@@ -12,8 +12,6 @@
         role="button"
         >Agregar registro</a
     >
-    Servicios
- 
     </div>
     <div class="card-body">
    <div
