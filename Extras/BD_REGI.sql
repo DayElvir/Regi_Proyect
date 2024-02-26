@@ -87,15 +87,17 @@ collate utf8_unicode_ci;
 
 /*Servicios */
 
-Create table Servicio(
+Create table Servicios(
 idservicio bigint primary key auto_increment,
 nombre_servicio varchar (30) not null,
-desc_servicio varchar (50),
-cost_servicio double,
-fech_inicio varchar (50),
-fech_final varchar (50),
+desc_servicio varchar (255) not null,
+cost_servicio numeric not null,
+fech_inicio date not null,
+fech_final date not null,
 actualizado_por varchar (30)
 )engine=InnoDB character set utf8 collate utf8_unicode_ci;
+
+
 
 create table pagos(
 idpago bigint primary key auto_increment,
