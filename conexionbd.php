@@ -9,8 +9,7 @@
   
     $conexion =new PDO( "mysql: host=$servidor;
     dbname=$basededatos",$usuario,$contrasena ); 
-  
-
+   echo"Si conecta";
   } catch (Exception $error) {
   
     echo  $error->getMessage();
