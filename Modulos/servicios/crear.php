@@ -29,7 +29,7 @@ $sentencia->bindParam(":creacion",$creacion);
   
 }
 
-include("../../header.php");
+include("navbar/navbar.php");
 ?>
 
 

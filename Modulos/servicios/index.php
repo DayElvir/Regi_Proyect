@@ -21,8 +21,7 @@ $sentencia->execute();
 $lista_servicios=$sentencia-> fetchAll(PDO::FETCH_ASSOC);
 
 
-
-include("../../../navar.php");
+include("navbar/navbar.php");
 
 ?>
 

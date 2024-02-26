@@ -56,8 +56,7 @@ if (isset($_GET['txtid'])) {
 
 
 
-include("../../header.php");
-
+  include("navbar/navbar.php");
 ?>
 
 <div class="card">
