@@ -94,12 +94,25 @@
 </nav>
 
 
+<div class="container-fluid mt-5">
+  <main class="mx-auto" id="content">
+    <!-- Aquí se cargará el contenido dinámicamente -->
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      Doloribus reiciendis atque impedit ea laudantium dicta! Fuga, officiis ab inventore modi aperiam quisquam architecto obcaecati dolore odio laboriosam recusandae optio. 
+      Quibusdam?</p>
+      <iframe src="" frameborder="0"></iframe>
+  </main>
+</div>
+
+
+
+
 <!-- Agregar los scripts de Bootstrap (jQuery y Popper.js) -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</br> 
+
 
 </body>
 </html>
