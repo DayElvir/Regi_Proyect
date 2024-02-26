@@ -1,23 +1,21 @@
 <?php
   $servidor="localhost";
-  $database="bd_regi";
+  $basededatos="bd_regi";
   $usuario= "root";
   $contrasena= "20191003101";
   
   
   try { 
   
-    $conexion =new PDO("mysql:host= $servidor; 
-    dbname= $database",$usuario , $contrasena ); 
+    $conexion =new PDO( "mysql: host=$servidor;
+    dbname=$basededatos",$usuario,$contrasena ); 
 
       echo"conexion realizada....";
 
   } catch (Exception $error) {
   
-    echo  $error->getMessage() ."";
+    echo  $error->getMessage();
   }
 
 
 
-
-?>
