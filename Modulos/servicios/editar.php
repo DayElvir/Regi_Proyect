@@ -30,15 +30,14 @@ if (isset($_GET['txtid'])) {
     $final=(isset($_POST['final'])) ? $_POST['final'] :"";
     $creacion=(isset($_POST['creacion'])) ? $_POST['creacion'] :"";
       
-    $sentencia=$conexion->prepare
-     ("UPDATE servicios 
+    $sentencia=$conexion->prepare("UPDATE servicios 
      SET nombre_servicio=:nombreservicio, desc_servicio=:descripcion,
      cost_servicio=:costoservicio, fech_inicio=:iniciar, fech_final=:final, actualizado_por=:creacion
      WHERE 
     idservicio=:id" );
     
   
-    $sentencia->bindParam(  ":idservicio",$txtid  );
+    $sentencia->bindParam(  ":id",$txtid  );
    $sentencia->bindParam(  ":nombreservicio",$nombre  );
    $sentencia->bindParam(":descripcion",$descripcion );
    $sentencia->bindParam(":costoservicio",$costoservicio );
@@ -47,7 +46,7 @@ if (isset($_GET['txtid'])) {
  $sentencia->bindParam(":creacion",$creacion);
  
  
-    //$sentencia->execute();
+    $sentencia->execute();
   }
 
 
