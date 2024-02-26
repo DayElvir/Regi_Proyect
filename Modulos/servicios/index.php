@@ -1,6 +1,21 @@
 <?php 
 include("../../conexionbd.php");
 
+if (isset($_GET['txtid'])) {
+echo $_GET['txtid'];
+
+$txtid=(isset($_GET['txtid']))?$_GET['txtid']:"";
+
+$sentencia=$conexion->prepare("DELETE FROM servicios 
+where idservicio=:idservicio");
+
+  $sentencia->bindParam(  "idservicio",$txtid  );
+  $sentencia->execute();
+
+}
+
+
+//Seleccionar la tabla de servicio
 $sentencia=$conexion->prepare("SELECT * FROM `servicios`" );
 $sentencia->execute();
 $lista_servicios=$sentencia-> fetchAll(PDO::FETCH_ASSOC);
@@ -36,6 +51,7 @@ include("../../header.php");
                 <th scope="col">Fecha Inicial</th>
                 <th scope="col">Fecha Final</th>
                 <th scope="col">Creado Por</th>
+                <th scope="col">Acciones</th>
             </tr>
         </thead>
         <tbody>
@@ -48,6 +64,31 @@ include("../../header.php");
                 <td><?php echo $registro['fech_inicio'];   ?> </td>
                 <td><?php echo $registro['fech_final'];   ?> </td>
                 <td><?php echo $registro['actualizado_por'];   ?> </td>
+                <td>
+                 <a
+                    name=""
+                    id=""
+                    class="btn btn-info"
+                    href="#"
+                    role="button"
+                    >Editar</a
+                 >
+                  <a
+                    name=""
+                    id=""
+                    class="btn btn-danger"
+                    href="index.php?txtid= <?php echo $registro ['idservicio']; ?>"
+                    role="button"
+                    >Eliminar</a
+                  >
+                  
+
+
+
+                </td>
+
+
+
             </tr>
             <?php } ?>
             </tr>
