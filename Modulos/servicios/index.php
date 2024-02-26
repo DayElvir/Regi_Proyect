@@ -1,4 +1,11 @@
-<?php include("../../header.php");
+<?php 
+include("../../conexionbd.php");
+
+$sentencia=$conexion->prepare("SELECT * FROM `servicios`" );
+$sentencia->execute();
+$lista_servicios=$sentencia-> fetchAll(PDO::FETCH_ASSOC);
+
+include("../../header.php");
 ?>
 
 <div class="card">
@@ -32,10 +39,20 @@
             </tr>
         </thead>
         <tbody>
+        <?php foreach ($lista_servicios as $registro) {?>
             <tr class="">
-                <td> </td>
-                <td> </td>
-                <td> </td>
+                <td><?php echo $registro['idservicio'];   ?> </td>
+                <td><?php echo $registro['nombre_servicio'];   ?> </td>
+                <td><?php echo $registro['desc_servicio'];   ?> </td>
+                <td><?php echo $registro['cost_servicio'];   ?> </td>
+                <td><?php echo $registro['fech_inicio'];   ?> </td>
+                <td><?php echo $registro['fech_final'];   ?> </td>
+                <td><?php echo $registro['actualizado_por'];   ?> </td>
+            </tr>
+            <?php } ?>
+            </tr>
+            </tr>
+            </tr>
             </tr>
         </tbody>
     </table>
