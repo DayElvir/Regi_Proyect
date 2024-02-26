@@ -101,9 +101,6 @@ include("./conexionbd.php");
 <div class="container-fluid mt-5">
   <main class="mx-auto" id="content">
     <!-- Aquí se cargará el contenido dinámicamente -->
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-      Doloribus reiciendis atque impedit ea laudantium dicta! Fuga, officiis ab inventore modi aperiam quisquam architecto obcaecati dolore odio laboriosam recusandae optio. 
-      Quibusdam?</p>
       <iframe src="" frameborder="0"></iframe>
   </main>
 </div>
