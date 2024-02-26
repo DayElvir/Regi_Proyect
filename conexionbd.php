@@ -10,8 +10,6 @@
     $conexion =new PDO( "mysql: host=$servidor;
     dbname=$basededatos",$usuario,$contrasena ); 
 
-      echo"conexion realizada....";
-
   } catch (Exception $error) {
   
     echo  $error->getMessage();
