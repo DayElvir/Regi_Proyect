@@ -13,12 +13,14 @@ if (isset($_GET['txtid'])) {
       $sentencia->execute();
       $registro=$sentencia->fetch(PDO::FETCH_LAZY);
     
-    $nombre=$registro['nombreservicio'];
-    $descripcion=$registro['descripcion'];
-    $costoservicio=$registro['costoservicio'];
-    $iniciar=$registro['iniciar'];
-    $final=$registro['final'];
-    $creacion=$registro['creacion'];
+    $nombre=$registro['nombre_servicio'];
+    $descripcion=$registro['desc_servicio'];
+    $costoservicio=$registro['cost_servicio'];
+    $iniciar=$registro['fech_inicio'];
+    $final=$registro['fech_final'];
+    $creacion=$registro['actualizado_por'];
+
+
 
     }
 
@@ -86,10 +88,6 @@ include("../../header.php");
                 id="iniciar"
                 aria-describedby="helpId"  />
         </div>
-
-
-
-
 
         <div class="mb-3">
             <label for="final" class="form-label">Fecha final</label>
