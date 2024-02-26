@@ -6,15 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="Navbar.css">
-  <title>Navbar</title>
+  <link rel="stylesheet" href="css/Navbar.css">
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg sticky-top">
   <!-- Logo -->
   <a class="navbar-brand" href="#">
-    <img src="r2.png" alt="Logo" height="60" width="60">
+    <img src="r02.png" alt="Logo" height="60" width="60">
   </a>
 
   <!-- Botón de hamburguesa para dispositivos móviles -->
@@ -92,19 +91,6 @@
     </ul>
   </div>
 </nav>
-
-
-<div class="container-fluid mt-5">
-  <main class="mx-auto" id="content">
-    <!-- Aquí se cargará el contenido dinámicamente -->
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-      Doloribus reiciendis atque impedit ea laudantium dicta! Fuga, officiis ab inventore modi aperiam quisquam architecto obcaecati dolore odio laboriosam recusandae optio. 
-      Quibusdam?</p>
-      <iframe src="" frameborder="0"></iframe>
-  </main>
-</div>
-
-
 
 
 <!-- Agregar los scripts de Bootstrap (jQuery y Popper.js) -->
