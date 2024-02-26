@@ -20,9 +20,42 @@ if (isset($_GET['txtid'])) {
     $final=$registro['fech_final'];
     $creacion=$registro['actualizado_por'];
 
-
-
     }
+  if ($_POST) {
+    $txtid=(isset($_POST['txtid'])) ? $_POST['txtid'] :"";
+    $nombre=(isset($_POST['nombreservicio'])) ? $_POST['nombreservicio'] :"";
+    $descripcion=(isset($_POST['descripcion'])) ? $_POST['descripcion'] :"";
+    $costoservicio=(isset($_POST['costoservicio'])) ? $_POST['costoservicio'] :"";
+    $iniciar=(isset($_POST['iniciar'])) ? $_POST['iniciar'] :"";
+    $final=(isset($_POST['final'])) ? $_POST['final'] :"";
+    $creacion=(isset($_POST['creacion'])) ? $_POST['creacion'] :"";
+      
+    $sentencia=$conexion->prepare
+     ("UPDATE servicios 
+     SET nombre_servicio=:nombreservicio, desc_servicio=:descripcion,
+     cost_servicio=:costoservicio, fech_inicio=:iniciar, fech_final=:final, actualizado_por=:creacion
+     WHERE 
+    idservicio=:id" );
+    
+  
+    $sentencia->bindParam(  ":idservicio",$txtid  );
+   $sentencia->bindParam(  ":nombreservicio",$nombre  );
+   $sentencia->bindParam(":descripcion",$descripcion );
+   $sentencia->bindParam(":costoservicio",$costoservicio );
+   $sentencia->bindParam(":iniciar",$iniciar);
+ $sentencia->bindParam(":final",$final);
+ $sentencia->bindParam(":creacion",$creacion);
+ 
+ 
+    //$sentencia->execute();
+  }
+
+
+
+
+
+
+
 
 include("../../header.php");
 
