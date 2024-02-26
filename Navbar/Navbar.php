@@ -13,7 +13,7 @@
 <nav class="navbar navbar-expand-lg sticky-top">
   <!-- Logo -->
   <a class="navbar-brand" href="#">
-    <img src="r02.png" alt="Logo" height="60" width="60">
+    <img src="navbar/r02.png" alt="Logo" height="60" width="60">
   </a>
 
   <!-- Botón de hamburguesa para dispositivos móviles -->
