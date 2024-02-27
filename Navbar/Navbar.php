@@ -33,8 +33,8 @@
             <i class="bi bi-collection"></i></i>Servicios
           </a>
           <div class="dropdown-menu dropdown-menu-custom " aria-labelledby="dropdownLeft1">
-            <a class="dropdown-item" href="#">Pago de seguridad</a>
-            <a class="dropdown-item" href="#">Agregar servicio</a>
+            <a class="dropdown-item" href="http://localhost/regi_proyect/modulos/servicios/index.php">Agregar Servicios</a>
+            <a class="dropdown-item" href="#">Pagar Servicios </a>
           </div>
         </li>
 
