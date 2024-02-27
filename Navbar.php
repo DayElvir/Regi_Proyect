@@ -28,13 +28,18 @@
 
       <!-- Dropdowns a la izquierda -->
       <ul class="navbar-nav">
+      <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="http://localhost/regi_proyect/index.php"   role="button" aria-haspopup="true" aria-expanded="false">
+          <i class="bi bi-building"></i> Inicio</a>
+        </li>
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle"  href="#" id="dropdownLeft1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="bi bi-collection"></i></i>Servicios
           </a>
           <div class="dropdown-menu dropdown-menu-custom " aria-labelledby="dropdownLeft1">
-            <a class="dropdown-item" href="C:\xampp\htdocs\Regi_proyect\servicios\index.php">Agregar Servicios</a>
-            <a class="dropdown-item" href="#">Pagar Servicios </a>
+            <a class="dropdown-item" href="http://localhost/regi_proyect/servicios/index.php">Agregar Servicios</a>
+            <a class="dropdown-item" href="http://localhost/regi_proyect/servicios/pago.php">Pagar Servicios </a>
           </div>
         </li>
 
@@ -94,13 +99,7 @@
   </nav>
 
 
-<div class="container-fluid ">
-  <main class="col-12 mx-auto" id="content">
-    <!-- Aquí se cargará el contenido dinámicamente -->
-      <iframe src="" frameborder="0"></iframe> <!--Aqui se pueden agregar las demas interfaces -->
 
-
-  </main>
 </div>
 
 
