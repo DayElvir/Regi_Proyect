@@ -27,8 +27,8 @@ $lista_servicios=$sentencia-> fetchAll(PDO::FETCH_ASSOC);
     <a
         name=""
         id=""
-        class="btn btn-primary"
-        href="crear.php"
+        class="<?php echo $modulos== 'crear'? 'Active': '' ; ?>" 
+        href="?p=crear"
         role="button"
         >Agregar registro</a
     >
