@@ -1,7 +1,5 @@
 <?php 
-include("../conexionbd.php");
-include("../Navbar.php");
-
+include("./conexionbd.php");
 
 if (isset($_GET['txtid'])) {
 echo $_GET['txtid'];
@@ -21,8 +19,6 @@ where idservicio=:idservicio");
 $sentencia=$conexion->prepare("SELECT * FROM `servicios`" );
 $sentencia->execute();
 $lista_servicios=$sentencia-> fetchAll(PDO::FETCH_ASSOC);
-
-
 ?>
 
 <div class="card">

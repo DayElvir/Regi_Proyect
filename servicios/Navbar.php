@@ -38,8 +38,9 @@
             <i class="bi bi-collection"></i></i>Servicios
           </a>
           <div class="dropdown-menu dropdown-menu-custom " aria-labelledby="dropdownLeft1">
-            <a class="dropdown-item" href="http://localhost/regi_proyect/servicios/index.php">Agregar Servicios</a>
-            <a class="dropdown-item" href="http://localhost/regi_proyect/servicios/pago.php">Pagar Servicios </a>
+           
+          <a class="<?php echo $modulos== 'index'? 'Active': '' ; ?>" href="?p=index">Agregar servicios <a/>
+         <a class="<?php echo $modulos== 'pago'? 'Active': '' ; ?>" href="?p=pago">Pagar servicios <a/>
           </div>
         </li>
 
