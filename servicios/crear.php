@@ -1,7 +1,7 @@
 
 <?php 
 
-include("../conexionbd.php");
+include("./conexionbd.php");
 
 if($_POST){
    //Almacenacion de datos o recepcion
@@ -116,8 +116,7 @@ $sentencia->bindParam(":creacion",$creacion);
       <a
         name=""
         id=""
-        class="btn btn-primary"
-        href="index.php"
+        class="<?php echo $modulos== 'index'? 'Active': '' ; ?>" href="?p=index"
         role="button"
         >Cancelar</a
       >
@@ -126,7 +125,8 @@ $sentencia->bindParam(":creacion",$creacion);
 
     </div>
   
-
+    class="btn btn-primary <?php echo $modulos== 'index'? 'Active': '' ; ?>" 
+        href="?p=index"
 
 
 

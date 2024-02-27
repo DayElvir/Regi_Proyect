@@ -1,6 +1,6 @@
 <?PHP 
 
-include("../../conexionbd.php");
+include("./conexionbd.php");
 
 
 if (isset($_GET['txtid'])) {

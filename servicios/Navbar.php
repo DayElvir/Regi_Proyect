@@ -39,8 +39,8 @@
           </a>
           <div class="dropdown-menu dropdown-menu-custom " aria-labelledby="dropdownLeft1">
            
-          <a class="<?php echo $modulos== 'index'? 'Active': '' ; ?>" href="?p=index">Agregar servicios <a/>
-         <a class="<?php echo $modulos== 'pago'? 'Active': '' ; ?>" href="?p=pago">Pagar servicios <a/>
+          <a class="dropdown-item "<?php echo $modulos== 'index'? 'Active': '' ; ?>" href="?p=index">Agregar servicios <a/>
+         <a class="dropdown-item"<?php echo $modulos== 'pago'? 'Active': '' ; ?>" href="?p=pago">Pagar servicios <a/>
           </div>
         </li>
 
