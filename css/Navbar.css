@@ -7,20 +7,26 @@
 }
 
 .navbar{
-  background-color: #052659;
+  background-color: #00193b;
   margin: 15px;
   border-radius: 10px;
 }
 
 
 .navbar-nav .nav-link {
-  color: #fff;
+  color: #acbabf;
 
 }
+
 .navbar-nav .dropdown-menu {
   width: 200px; 
 }
+.navbar-nav .nav-link:hover {
+  color: #fff;
+  background-color: #052659;
+  border-radius: 10px;
 
+}
 
 .navbar-nav .nav-item {
   margin-right: 10px; 
@@ -32,6 +38,9 @@
   background-color: #d1d1d1; 
   border-color: #ffffff;
   color: #000000 
+}
+.navbar-toggler-icon{
+  color: #fff;
 }
 .nav-link i {
   margin-right: 5px; 
@@ -62,25 +71,25 @@
 .dropdown-item{
   color: #fff;
   border-radius: 10px;
+  margin: 0;
 }
 .dropdown-menu-custom {
   border: 1px solid #b1b1b1;
   border-radius: 10px;
-  background-color: #0047b1;
+  background-color: #052659;
   color: #fff;
 }
+
 
 .dropdown-menu {
   margin-top: 10px;
   padding: 0.5rem; 
 }
 
-.dropdown-item {
-  margin: 0; 
-}
+
 
 .dropdown-menu-center {
-  text-align: center;
+  text-align: left;
   max-width: none;
 }
 
@@ -99,8 +108,9 @@
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #2e2d2d;
+  background-color: #393d42;
   color: #ffffff;
+  text-align: center;
   padding: 0.5rem;
   font-size: 10px;
   width: 150px;
@@ -119,13 +129,24 @@
   margin-right: 5px;
 }
 
+.dropdown-menu a i{
+  margin: 8px;
+}
 
+.container-fluid{
+  background-color: #7a1212;
+}
 
+.col-12{
+  background-color: #333e4b;
+}
 
 iframe {
   width: 100%;
   height: calc(100vh - 56px); /* Altura total de la ventana menos la altura del navbar */
   border: none; /* Para quitar el borde del iframe si es necesario */
 }
+
+
 
 
