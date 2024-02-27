@@ -1,6 +1,6 @@
 <?php 
-include("../../conexionbd.php");
-include("../../navbar/Navbar.php");
+include("../conexionbd.php");
+include("../Navbar.php");
 
 
 if (isset($_GET['txtid'])) {

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="css/Navbar.css">
+  <link rel="stylesheet" href="Navbar.css">
   <title>Regi</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
   <nav class="navbar navbar-expand-lg sticky-top">
     <!-- Logo -->
     <a class="navbar-brand" href="#">
-      <img src="navbar/r02.png" alt="Logo" height="60" width="60">
+      <img src="r02.png" alt="Logo" height="60" width="60">
     </a>
 
     <!-- Botón de hamburguesa para dispositivos móviles -->
@@ -33,7 +33,7 @@
             <i class="bi bi-collection"></i></i>Servicios
           </a>
           <div class="dropdown-menu dropdown-menu-custom " aria-labelledby="dropdownLeft1">
-            <a class="dropdown-item" href="http://localhost/regi_proyect/modulos/servicios/index.php">Agregar Servicios</a>
+            <a class="dropdown-item" href="C:\xampp\htdocs\Regi_proyect\servicios\index.php">Agregar Servicios</a>
             <a class="dropdown-item" href="#">Pagar Servicios </a>
           </div>
         </li>
