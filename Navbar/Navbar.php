@@ -27,15 +27,15 @@
 
     <!-- Dropdowns a la izquierda -->
     <ul class="navbar-nav">
-      <li class="nav-item dropdown">
+     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle"  href="#" id="dropdownLeft1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="bi bi-collection"></i></i>Servicios
         </a>
         <div class="dropdown-menu dropdown-menu-custom " aria-labelledby="dropdownLeft1">
-          <a class="dropdown-item" href="#">Pago de seguridad</a>
-          <a class="dropdown-item" href="#">Agregar servicio</a>
+          <a class="dropdown-item" href="http://localhost/regi_proyect/modulos/servicios/index.php">Servicios</a>
         </div>
-      </li>
+      </li> 
+      
 
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="dropdownLeft2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

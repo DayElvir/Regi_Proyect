@@ -20,9 +20,7 @@ $sentencia=$conexion->prepare("SELECT * FROM `servicios`" );
 $sentencia->execute();
 $lista_servicios=$sentencia-> fetchAll(PDO::FETCH_ASSOC);
 
-
-include("navbar/navbar.php");
-
+include("         ");
 ?>
 
 <div class="card">
