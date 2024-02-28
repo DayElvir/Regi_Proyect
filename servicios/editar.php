@@ -1,7 +1,7 @@
 <?PHP 
 
-include("./conexionbd.php");
-
+include("../conexionbd.php");
+include("../navbar.php");
 
 if (isset($_GET['txtid'])) {
     //Recuperar informacion para editar
@@ -49,14 +49,6 @@ if (isset($_GET['txtid'])) {
     $sentencia->execute();
   }
 
-
-
-
-
-
-
-
-  include("navbar/navbar.php");
 ?>
 
 <div class="card">
@@ -140,6 +132,7 @@ if (isset($_GET['txtid'])) {
                 aria-describedby="helpId"
                 placeholder="Escriba su nombre de usuario "  />
         </div>
+
        <button
         type="submit"
         class="btn btn-success"
@@ -147,7 +140,7 @@ if (isset($_GET['txtid'])) {
         Agregar
        </button>
        
-      <a
+       <a
         name=""
         id=""
         class="btn btn-primary"

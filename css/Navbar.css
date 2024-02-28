@@ -125,26 +125,12 @@
 
 .navbar-icon {
   font-size: 24px;
-  color: #333e4b;
+  color: #ffffff;
   margin-right: 5px;
 }
 
 .dropdown-menu a i{
   margin: 8px;
-}
-
-.container-fluid{
-  background-color: #7a1212;
-}
-
-.col-12{
-  background-color: #333e4b;
-}
-
-iframe {
-  width: 100%;
-  height: calc(100vh - 56px); /* Altura total de la ventana menos la altura del navbar */
-  border: none; /* Para quitar el borde del iframe si es necesario */
 }
 
 

@@ -1,8 +1,9 @@
 <?php 
-include("./conexionbd.php");
+include("../conexionbd.php");
+include("../navbar.php");
 
 if (isset($_GET['txtid'])) {
-echo $_GET['txtid'];
+//echo $_GET['txtid'];
 
 $txtid=(isset($_GET['txtid']))?$_GET['txtid']:"";
 
@@ -27,8 +28,8 @@ $lista_servicios=$sentencia-> fetchAll(PDO::FETCH_ASSOC);
     <a
         name=""
         id=""
-        class="btn btn-primary <?php echo $modulos== 'crear'? 'Active': '' ; ?>" 
-        href="?p=crear"
+        class="btn btn-primary "
+        href="crear.php"
         role="button"
         >Agregar registro</a
     >
@@ -45,7 +46,7 @@ $lista_servicios=$sentencia-> fetchAll(PDO::FETCH_ASSOC);
                 <th scope="col">ID</th>
                 <th scope="col">Nombre servicio</th>
                 <th scope="col">Descripción</th>
-                <th scope="col">Costo del servicio</th>
+                <th scope="col">Costo</th>
                 <th scope="col">Fecha Inicial</th>
                 <th scope="col">Fecha Final</th>
                 <th scope="col">Creado Por</th>
@@ -67,16 +68,16 @@ $lista_servicios=$sentencia-> fetchAll(PDO::FETCH_ASSOC);
                 <a
                     name=""
                     id=""
-                    class="btn btn-info" 
+                     class=" btn btn-primary bi bi-pencil-square"
                     href="editar.php?txtid= <?php echo $registro ['idservicio']; ?>"
                     role="button"
                     >Editar</a
-                 >
-                 
+                 > 
+                 |
                   <a
                     name=""
                     id=""
-                    class="btn btn-danger"
+                     class= "btn btn-danger bi bi-trash3"
                     href="index.php?txtid= <?php echo $registro ['idservicio']; ?>"
                     role="button"
                     >Eliminar</a

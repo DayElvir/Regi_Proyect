@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="css/Navbar.css">
+  <link href="http://localhost/regi_proyect/css/navbar.css" rel="stylesheet" type="text/css"/>
   <title>Regi</title>
 </head>
 <body>
@@ -39,8 +39,8 @@
           </a>
           <div class="dropdown-menu dropdown-menu-custom " aria-labelledby="dropdownLeft1">
            
-          <a class="dropdown-item "<?php echo $modulos== 'index'? 'Active': '' ; ?>" href="?p=index">Agregar servicios <a/>
-         <a class="dropdown-item"<?php echo $modulos== 'pago'? 'Active': '' ; ?>" href="?p=pago">Pagar servicios <a/>
+          <a class="dropdown-item " href="http://localhost/regi_proyect/servicios/index.php">Agregar servicios <a/>
+         <a class="dropdown-item" href="http://localhost/regi_proyect/pagos/agregarpago.php">Pagar servicios <a/>
           </div>
         </li>
 
@@ -98,9 +98,6 @@
       </ul>
     </div>
   </nav>
-
-
-
 </div>
 
 <!-- Agregar los scripts de Bootstrap (jQuery y Popper.js) -->
