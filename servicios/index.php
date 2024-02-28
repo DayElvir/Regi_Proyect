@@ -63,14 +63,16 @@ $lista_servicios=$sentencia-> fetchAll(PDO::FETCH_ASSOC);
                 <td><?php echo $registro['fech_final'];   ?> </td>
                 <td><?php echo $registro['actualizado_por'];   ?> </td>
                 <td>
-                 <a
+                 
+                <a
                     name=""
                     id=""
-                    class="btn btn-info"
+                    class="btn btn-info" 
                     href="editar.php?txtid= <?php echo $registro ['idservicio']; ?>"
                     role="button"
                     >Editar</a
                  >
+                 
                   <a
                     name=""
                     id=""

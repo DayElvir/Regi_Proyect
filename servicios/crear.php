@@ -125,8 +125,6 @@ $sentencia->bindParam(":creacion",$creacion);
 
     </div>
   
-    class="btn btn-primary <?php echo $modulos== 'index'? 'Active': '' ; ?>" 
-        href="?p=index"
 
 
 

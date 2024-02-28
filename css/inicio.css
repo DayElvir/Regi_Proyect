@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'century gothic', sans-serif;
+}
+.collapse{
+  color: #ffffff;
+}
+
+iframe {
+  width: 100%;
+  height: calc(100vh - 56px); /* Altura total de la ventana menos la altura del navbar */
+  border: none; /* Para quitar el borde del iframe si es necesario */
+}
+
+.text h1{
+  font-size: 55px;
+  color: #052659;
+}
+
+.text h2{
+  font-size: 65px;
+  color: #052659;
+}
+.text p{
+  font-size: 35px;
+  margin-top: 8px;
+}
+
+.text span,
+.text p {
+  line-height: 1.5; 
+  align-content: center;
+  justify-content: center;
+}
+
+/* Media queries para hacer el texto más pequeño en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .text span,
+  .text p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .text span,
+  .text p {
+    font-size: 12px;
+  }
+}
+
