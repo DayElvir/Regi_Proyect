@@ -1,8 +1,6 @@
-<?php 
-
-include ("../navbar.php");
-include("../conexionbd.php");
-
+<?php
+  include("../conexionbd.php");
+  include ("../Navbar.php");
 ?>
 
 <!DOCTYPE html>

@@ -7,7 +7,7 @@
 }
 
 .navbar{
-  background-color: #00193b;
+  background-color: rgba(0, 0, 0, .2);
   margin: 15px;
   border-radius: 10px;
 }

@@ -45,9 +45,6 @@
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdownLeft2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="bi bi-bar-chart-line"></i>Estadísticas
-          </a>
           <div class="dropdown-menu dropdown-menu-custom " aria-labelledby="dropdownLeft2">
             <a class="dropdown-item" href="#">Historial de pago</a>
             <a class="dropdown-item" href="#">Deudores</a>
@@ -61,7 +58,7 @@
           </a>
           <div class="dropdown-menu dropdown-menu-custom " aria-labelledby="dropdownLeft3">
             <a class="dropdown-item" href="#">Administrar usuarios</a>
-            <a class="dropdown-item" href="#">Administrar roles</a>
+            <a class="dropdown-item" href="http://localhost/Regi_proyect/Roles/roles.php">Administrar roles</a>
           </div>
         </li>
       </ul>
