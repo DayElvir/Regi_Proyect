@@ -88,9 +88,15 @@ idusuario bigint,
 idservicio bigint,
 fecha_pago date not null,
 no_registro_banco varchar (20) not null,
+comprobante VARCHAR(255) not null,
+monto int(20) not null,
+cuenta_depositar int(20) not null,
 foreign key (idusuario) references Usuarios (idusuario) on delete cascade,
 foreign key (idservicio) references servicios (idservicio) on delete cascade
 )engine=InnoDB character set utf8 collate utf8_unicode_ci;
+
+
+
 
 create table estadoscuenta(
 idestado bigint primary key auto_increment,
