@@ -40,7 +40,7 @@
           <div class="dropdown-menu dropdown-menu-custom " aria-labelledby="dropdownLeft1">
            
           <a class="dropdown-item " href="http://localhost/regi_proyect/servicios/index.php">Agregar servicios <a/>
-         <a class="dropdown-item" href="http://localhost/regi_proyect/pagos/agregarpago.php">Pagar servicios <a/>
+         <a class="dropdown-item" href="http://localhost/regi_proyect/servicios/apagar.php">Pagar servicios <a/>
           </div>
         </li>
 

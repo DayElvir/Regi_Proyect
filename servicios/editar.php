@@ -10,7 +10,7 @@ if (isset($_GET['txtid'])) {
     where idservicio=:idservicio");
       $sentencia->bindParam(  "idservicio",$txtid  );
       $sentencia->execute();
-      $registro=$sentencia->fetch(PDO::FETCH_LAZY);
+      $registro=$sentencia->fetch(PDO::FETCH_ASSOC);
     
     $nombre=$registro['nombre_servicio'];
     $descripcion=$registro['desc_servicio'];
@@ -18,7 +18,6 @@ if (isset($_GET['txtid'])) {
     $iniciar=$registro['fech_inicio'];
     $final=$registro['fech_final'];
     $creacion=$registro['actualizado_por'];
-
     }
   if ($_POST) {
     $txtid=(isset($_POST['txtid'])) ? $_POST['txtid'] :"";
