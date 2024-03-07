@@ -15,6 +15,7 @@ identidad_usuario varchar (20) not null,
 apodo_usuario varchar (20) not null,
 token varchar (120) not null ,
 intento_fallidos int (20),
+fecha_ingreso datetime not null,
 foreign key (idrol) references roles (idrol) on delete cascade,
 foreign key (idestado) references estados (idestado) on delete cascade
 )engine=InnoDB
@@ -43,10 +44,7 @@ collate utf8_unicode_ci;
 
 create table estados (
 idestado bigint  (20) primary key auto_increment,
-activo int (10) not null,
-inactivo int(10) not null,
-nuevo int (10) not null,
-bloqueo int (10) not null
+estado varchar (45) not null
 )engine=InnoDB
 character set utf8
 collate utf8_unicode_ci;
@@ -69,7 +67,6 @@ character set utf8
 collate utf8_unicode_ci;
 
 /*Servicios */
-
 Create table Servicios(
 idservicio bigint primary key auto_increment,
 nombre_servicio varchar (30) not null,
@@ -79,8 +76,6 @@ fech_inicio date not null,
 fech_final date not null,
 actualizado_por varchar (30)
 )engine=InnoDB character set utf8 collate utf8_unicode_ci;
-
-
 
 create table pagos(
 idpago bigint primary key auto_increment,
@@ -95,16 +90,12 @@ foreign key (idusuario) references Usuarios (idusuario) on delete cascade,
 foreign key (idservicio) references servicios (idservicio) on delete cascade
 )engine=InnoDB character set utf8 collate utf8_unicode_ci;
 
-
-
-
 create table estadoscuenta(
 idestado bigint primary key auto_increment,
 idpago bigint,
 desc_estado varchar (30),
 foreign key (idpago) references pagos (idpago) on delete cascade
 )engine=InnoDB character set utf8 collate utf8_unicode_ci;
-
 
 create table historial_pago(
 idhistorial bigint primary key auto_increment,
@@ -114,9 +105,7 @@ foreign key (idpago) references pagos (idpago) on delete cascade,
 foreign key (idestado) references estadoscuenta(idestado) on delete cascade
 )engine=InnoDB character set utf8 collate utf8_unicode_ci;
 
-
 /* Notificaciones */
-
 create table tipo_notificacion (
 idtipo bigint primary key auto_increment,
 des_not varchar (30)
@@ -147,3 +136,67 @@ fec_publicacion date,
 foreign key (idusuario) references usuarios (idusuario) on delete cascade
 )engine=InnoDB character set utf8 collate utf8_unicode_ci;
 
+
+/*Procedimientos Almacenados */
+
+/* Ver Usuarios*/
+delimiter $$
+create procedure VerUsuario ()
+begin 
+select*from usuarios;
+end$$
+/*Nuevo Usuario*/
+delimiter $$
+Create procedure NuevoUsuario(
+in idrol bigint,
+in idestado bigint,
+in nombre_usuario varchar (30),
+in contra_usuario varchar (20),
+in correo_usuario varchar (30),
+in tele_usuario varchar (30),
+in direccion_usuario varchar (30),
+in apellido_usuario varchar (30),
+in identidad_usuario varchar (20),
+in apodo_usuario varchar (20),
+in token varchar (120) ,
+in intento_fallidos int (20),
+in fecha_ingreso datetime
+)
+begin 
+INSERT INTO usuarios (idrol, idestado, nombre_usuario, contra_usuario, 
+correo_usuario, tele_usuario, direccion_usuario, apellido_usuario,identidad_usuario,
+ apodo_usuario, token, intento_fallidos,fecha_ingreso)
+values (idrol, idestado, nombre_usuario, contra_usuario, 
+correo_usuario, tele_usuario, direccion_usuario, apellido_usuario,identidad_usuario,
+ apodo_usuario, token, intento_fallidos,fecha_ingreso);
+ end$$
+ 
+/*Eliminar Usuarios*/
+delimiter $$ 
+create procedure EliminarUsuario( in id bigint)
+begin 
+delete from usuarios where id= idusuario;
+end$$
+
+/*Actualizar Usuario*/
+delimiter $$
+Create procedure ActualizarUsuarios(
+in id bigint,
+in idrol bigint,
+in idestado bigint,
+in nombre_usuario varchar (30),
+in contra_usuario varchar (20),
+in correo_usuario varchar (30),
+in tele_usuario varchar (30),
+in direccion_usuario varchar (30),
+in apellido_usuario varchar (30),
+in identidad_usuario varchar (20),
+in apodo_usuario varchar (20),
+in token varchar (120) ,
+in intento_fallidos int (20)
+)
+begin 
+UPDATE usuarios SET idrol=idrol, idestado=idestado, nombre_usuario=nombre_usuario, contra_usuario=contra_usuario, 
+correo_usuario=correo_usuario, tele_usuario=tele_usuario, direccion_usuario=direccion_usuario, apellido_usuario=apellido_usuario,identidad_usuario=identidad_usuario,
+ apodo_usuario=apodo_usuario, token=token, intento_fallidos=intento_fallidos WHERE id=idusuario;
+end$$

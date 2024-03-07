@@ -1,5 +1,4 @@
 <?PHP 
-
 include("../conexionbd.php");
 include("../navbar.php");
 
