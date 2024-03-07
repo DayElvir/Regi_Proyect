@@ -10,7 +10,7 @@ if (isset($_GET['txtid'])) {
     where idservicio=:idservicio");
       $sentencia->bindParam(  "idservicio",$txtid  );
       $sentencia->execute();
-      $registro=$sentencia->fetch(PDO::FETCH_ASSOC);
+      $registro=$sentencia-> fetchAll(PDO::FETCH_ASSOC);
     
     $nombre=$registro['nombre_servicio'];
     $descripcion=$registro['desc_servicio'];

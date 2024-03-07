@@ -14,8 +14,6 @@ where idservicio=:idservicio");
   $sentencia->execute();
 
 }
-
-
 //Seleccionar la tabla de servicio
 $sentencia=$conexion->prepare("SELECT * FROM `servicios`" );
 $sentencia->execute();
@@ -43,7 +41,7 @@ $lista_servicios=$sentencia-> fetchAll(PDO::FETCH_ASSOC);
     >
         <thead>
             <tr>
-                <th scope="col">ID</th>
+                <th scope="col">#</th>
                 <th scope="col">Nombre servicio</th>
                 <th scope="col">Descripción</th>
                 <th scope="col">Costo</th>
@@ -71,7 +69,7 @@ $lista_servicios=$sentencia-> fetchAll(PDO::FETCH_ASSOC);
                      class=" btn btn-primary bi bi-pencil-square"
                     href="editar.php?txtid= <?php echo $registro ['idservicio']; ?>"
                     role="button"
-                    >Editar</a
+                    ></a
                  > 
                  |
                   <a
@@ -80,7 +78,7 @@ $lista_servicios=$sentencia-> fetchAll(PDO::FETCH_ASSOC);
                      class= "btn btn-danger bi bi-trash3"
                     href="index.php?txtid= <?php echo $registro ['idservicio']; ?>"
                     role="button"
-                    >Eliminar</a
+                    ></a
                   >
                 </td>
             </tr>
